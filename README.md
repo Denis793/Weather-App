@@ -11,11 +11,8 @@
 ## 🖼️ Screenshot
 
 <div align="center">
-  <img src="https://github.com/Denis793/Store/blob/main/src/img/screens/screen-1.png" alt="View click" height="auto" width="100%">
-  <img src="https://github.com/Denis793/Store/blob/main/src/img/screens/screen-2.png" alt="View click" height="auto" width="100%">
-  <img src="https://github.com/Denis793/Store/blob/main/src/img/screens/screen-3.png" alt="View click" height="auto" width="100%">
-  <img src="https://github.com/Denis793/Store/blob/main/src/img/screens/screen-4.png" alt="View click" height="auto" width="100%">
-  <img src="https://github.com/Denis793/Store/blob/main/src/img/screens/screen-5.png" alt="View click" height="auto" width="100%">
+  <img src="https://github.com/Denis793/weather-app/blob/main/src/assets/img/screens/screen2.png" alt="View click" height="auto" width="100%">
+  <img src="https://github.com/Denis793/weather-app/blob/main/src/assets/img/screens/screen2.png" alt="View click" height="auto" width="100%">
 </div>
 ---
 
