@@ -6,7 +6,7 @@ export const useNowWeather = (city: string) =>
     queryKey: ['now', city],
     queryFn: () => api.nowByCity(city),
     enabled: !!city,
-    staleTime: 1000 * 60, // 1 хв
+    staleTime: 1000 * 60,
   });
 
 export const useForecast = (city: string) =>
