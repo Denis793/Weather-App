@@ -73,7 +73,7 @@ It provides detailed weather insights such as:
 
 ```bash
 git clone https://github.com/Denis793/weather-fsd.git
-cd weather-fsd
+cd weather-app
 npm install
 npm run dev
 ```
