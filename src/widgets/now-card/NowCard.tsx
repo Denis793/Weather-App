@@ -47,7 +47,7 @@ export function NowCard({ data }: { data: WeatherNow }) {
   const diameter = Math.min(size.width, size.height);
   const ready = diameter > 0;
   const center = diameter / 2;
-  const metricW = diameter * 0.22;
+  const metricW = diameter * 0.24;
   const metricH = diameter * 0.1;
   const halfW = metricW / 2;
   const halfH = metricH / 2;
@@ -61,7 +61,7 @@ export function NowCard({ data }: { data: WeatherNow }) {
         <div className="text-white/90 font-medium truncate">
           {data.name}, {data.sys.country}
         </div>
-        <div className="text-xs text-white/70">{fmtTime(data.dt, data.timezone, 'EEEE • HH:mm')}</div>
+        <div className="text-xs text-white/70">{fmtTime(data.dt, data.timezone, 'EEEE')}</div>
       </div>
 
       <div className="mx-auto mt-2 flex max-w-[560px] items-center justify-center px-3">
@@ -111,7 +111,7 @@ export function NowCard({ data }: { data: WeatherNow }) {
                     top: cy - halfH,
                     width: metricW,
                     height: metricH,
-                    fontSize: `${diameter * 0.03}px`,
+                    fontSize: `${diameter * 0.04}px`,
                   }}
                 >
                   <div className="opacity-80 whitespace-nowrap leading-none">{m.label}</div>
