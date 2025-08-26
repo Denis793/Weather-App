@@ -1,69 +1,88 @@
-# React + TypeScript + Vite
+# 🌦️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <a href="weather-app-lovat-eight-46.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/View%20Project-Click%20Here-blue?style=for-the-badge" alt="View Project">
+  </a>
+</p>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖼️ Screenshot
 
-## Expanding the ESLint configuration
+<div align="center">
+  <img src="https://github.com/Denis793/Store/blob/main/src/img/screens/screen-1.png" alt="View click" height="auto" width="100%">
+  <img src="https://github.com/Denis793/Store/blob/main/src/img/screens/screen-2.png" alt="View click" height="auto" width="100%">
+  <img src="https://github.com/Denis793/Store/blob/main/src/img/screens/screen-3.png" alt="View click" height="auto" width="100%">
+  <img src="https://github.com/Denis793/Store/blob/main/src/img/screens/screen-4.png" alt="View click" height="auto" width="100%">
+  <img src="https://github.com/Denis793/Store/blob/main/src/img/screens/screen-5.png" alt="View click" height="auto" width="100%">
+</div>
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📖 Description
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+This project --- **Weather App**, is a responsive web application for
+displaying current weather and forecasts.\
+It provides detailed weather insights such as:
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- 🌡️ Current temperature, min/max, feels like
+- 🌤️ Dynamic weather icons & backgrounds (day/night)
+- 💨 Wind speed & direction
+- 💧 Humidity, pressure, visibility
+- 🌧️ Precipitation probability & amount
+- 📅 5-day forecast with detailed daily stats
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🚀 Technologies
+
+- **React** --- UI building
+- **TypeScript** --- type safety
+- **Vite** --- project bundling
+- **Tailwind CSS + Shadcn UI** --- styling & UI components
+- **Radix UI** --- accessibility & primitives
+- **OpenWeather API** --- weather data
+- **Context API / Hooks** --- state management
+- **Node.js + npm** --- runtime & package manager
+
+---
+
+## 📂 Structure
+
+    src/
+    │── app/               # App entry, global providers
+    │── entities/          # Business logic (weather model, queries)
+    │── features/          # Reusable features (search-city, etc.)
+    │── widgets/           # UI widgets (NowCard, ForecastCard, Backdrop)
+    │── pages/             # Pages (Now, Forecast)
+    │── shared/            # Shared libs, utils, assets (icons, backdrops)
+    │── styles/            # Global styles & Tailwind config
+
+---
+
+## ⚙️ Features
+
+- 🌦️ Real-time weather data
+- 🌞 Dynamic day/night backgrounds & icons
+- 📊 Daily aggregated statistics (min/max temp, humidity, wind,
+  clouds, precipitation)
+- 📅 Weekly forecast (selectable days)
+- 🔎 City search (OpenWeather geolocation API)
+- 📱 Responsive design (mobile-first)
+
+---
+
+## ▶️ Getting Started
+
+```bash
+git clone https://github.com/Denis793/weather-fsd.git
+cd weather-fsd
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📜 License
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This project is available under the **MIT** license.
