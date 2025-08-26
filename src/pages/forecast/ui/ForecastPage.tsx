@@ -17,7 +17,7 @@ function dayKey(unix: number, tz: number) {
 }
 
 function weekdayLabel(d: Date) {
-  return d.toLocaleDateString(undefined, { weekday: 'short' });
+  return d.toLocaleDateString('en-US', { weekday: 'long' });
 }
 
 function windDir(deg?: number) {
