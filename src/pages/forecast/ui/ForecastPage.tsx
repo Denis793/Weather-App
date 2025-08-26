@@ -274,7 +274,7 @@ function Metric({ icon, label, value }: { icon: string; label: string; value: st
   return (
     <div className="rounded-xl border border-white/15 bg-white/10 px-3 py-2 backdrop-blur">
       <div className="flex items-center gap-2">
-        <img src={icon} alt="" className="h-4 w-4 opacity-80" />
+        <img src={icon} alt="" className="h-10 w-10 opacity-80" />
         <div className="text-[11px] uppercase tracking-wide text-white/70">{label}</div>
       </div>
       <div className="mt-1 font-medium">{value}</div>
