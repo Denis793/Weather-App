@@ -1,4 +1,3 @@
-// path: src/pages/locations/ui/LocationsPage.tsx
 import { Backdrop } from '@/widgets/backdrop/Backdrop';
 import { SearchCity } from '@/features/search-city/ui/SearchCity';
 import clearDay from '@/assets/img/backdrops/clear-day.svg';
