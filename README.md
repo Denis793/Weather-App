@@ -11,8 +11,7 @@
 ## 🖼️ Screenshot
 
 <div align="center">
-  <img src="https://github.com/Denis793/weather-app/blob/main/src/assets/img/screens/screen1.png" alt="View click" height="auto" width="100%">
-  <img src="https://github.com/Denis793/weather-app/blob/main/src/assets/img/screens/screen2.png" alt="View click" height="auto" width="100%">
+  <img src="https://github.com/Denis793/Weather-App/blob/main/src/assets/img/screens/Screenshot-1-Weather_App.png" alt="View click" height="auto" width="100%">
 </div>
 ---
 
