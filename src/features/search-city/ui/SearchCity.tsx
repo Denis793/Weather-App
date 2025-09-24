@@ -23,7 +23,7 @@ export function SearchCity({ onPick }: Props) {
 
   return (
     <div className="space-y-4">
-      <div className="flex gap-2">
+      <div className="flex items-center gap-2">
         <Input
           value={q}
           onChange={(e) => setQ(e.target.value)}

@@ -14,8 +14,8 @@ export function HourlyStrip({ items, tz, take = 10 }: { items: ForecastItem[]; t
   const nowH = new Date().getUTCHours();
 
   return (
-    <div className="container mt-6">
-      <div className="flex gap-3 overflow-x-auto pb-2 pr-3">
+    <div className="container my-6 ">
+      <div className="flex gap-4 overflow-x-auto p-4">
         {slice.map((it) => {
           const d = new Date((it.dt + tz) * 1000);
           const isActive = d.getHours() === nowH;
